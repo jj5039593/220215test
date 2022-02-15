@@ -1,0 +1,21 @@
+@charset "utf-8";
+@import url(reset.css);
+
+.footer{
+    width: 100%;
+    height: auto;
+}
+.footer .inner-footer{
+    display: flex;
+    height: 150px;
+    flex: 0 1 1400;
+    justify-content: center;
+    background-color: black;
+}
+.footer .inner-footer .fcon{
+    display: flex;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    line-height: 150px;
+}

@@ -1,0 +1,75 @@
+@charset "utf-8";
+@import url(reset.css);
+
+.header{
+    width: 100%;
+    height: auto;
+}
+.header .inner-header{
+    display: flex;
+    justify-content: center;
+}
+.header .inner-header .nav{
+    flex: 0 1 1400px;
+    display: flex;
+    justify-content: space-between;
+}
+.header .inner-header .nav h1.logo a img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.header .inner-header .nav .gnb{
+    flex: 0 1 600px;
+    height: auto;
+}
+.header .inner-header .nav .gnb>ul{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 20px 0;
+}
+.header .inner-header .nav .gnb>ul>li{
+    flex: 0 1 100%;
+    transition: all 0.2s;
+    position: relative;
+    text-align: center;
+    z-index: 999;
+}
+.header .inner-header .nav .gnb>ul>li:hover{
+    background-color: black;
+}
+.header .inner-header .nav .gnb>ul>li:hover a{
+    color: white;
+}
+
+.header .inner-header .nav .gnb>ul>li a{
+    font-size: 20px;
+    line-height: 60px;
+}
+
+.header .inner-header .nav .gnb>ul>li ul.sub{
+    position: absolute;
+    width: 100%;
+    line-height: 30px;
+    font-size: 16px;
+    display: none;
+
+}
+.header .inner-header .nav .gnb>ul>li ul.sub>li:hover{
+    background-color: brown;
+}
+
+.header .inner-header .nav .gnb>ul>li:hover ul.sub{
+    display: block;
+    padding: 10px 0;
+    background-color: #ccc;
+}
+
+
+@media only screen and (max-width:640px){
+    .header .inner-header .nav .gnb{
+       display: none;
+    }
+}
